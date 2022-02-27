@@ -167,6 +167,27 @@ This shortcode has 2 parameters:
 </details>
 
 <details>
+<summary> codeFile.html </summary>
+This Shortcut loads a code file. Similar to tabsCode.html but only with one file.
+
+
+Usage example:
+    
+
+    ```
+{{< codeFile
+    file="/content/blog/java_basics/HelloWorld.java" language="Java" title="Java" icon="java" 
+>}} 
+```
+The parameter **file** is the name of the code file to be displayed.
+The path needs to start from the `content` folder.<br>
+The parameter **language** is used to highlight the syntax of the code properly. 
+The parameter **title** is the title of the Code window <br>
+The parameter **icon** is the icon to be shown at the right of the title, it is an optional parameter. See the partial code `icon.html` for the available icons.
+    
+</details>
+    
+<details>
 <summary> container.html </summary>
 
 This shortcode builds a centred page that is as wide as the two third of the size of the page. The content of the shortcode will pass through the markdown processor.
